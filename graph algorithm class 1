@@ -1,0 +1,33 @@
+
+
+#include<bits/stdc++.h>
+#define max_node 105
+using namespace std;
+vector<int>graph[max_node];
+vector<pair<int,int> > wGraph[max_node];
+int main()
+{
+    int n;
+    cin>>n;
+    /*
+    
+    when there is no weight in the edges;
+    and this is the input method :
+    
+    graph[1].push_back(3);
+    graph[1].push_back(4);
+
+    graph[3].push_back(5);
+    graph[3].push_back(6);
+
+    graph[4].push_back(3);
+    
+    */
+
+
+// when there is weigh in the edges ;
+  // and this is the input method :
+      
+    wGraph[1].push_back({2,4});///here 4 is weight and 2 is adjacent of 1;
+    wGraph[1].push_back({4,5});///here 5 is weight and 4 is adjacent of 1;
+}
