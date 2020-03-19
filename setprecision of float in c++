@@ -9,7 +9,9 @@ int main()
 
     double a,b,c;
     double pi=3.14159,tri,cri,tra,qua,ret;
-    cin>>a>>b>>c;
+    
+    cin>>a>>b>>c;                            //u can add fixed input precision like
+                                             // cin>>fixed>>setprecision(4)>>a;
     tri =0.5*a*c;
     cri =pi*(c*c);
     tra=(a+b)/2*c;
