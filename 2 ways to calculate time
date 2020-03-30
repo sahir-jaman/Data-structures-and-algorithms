@@ -1,0 +1,73 @@
+//problem number : 1046 of URI 
+1st process: 
+
+// my process ..
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+ int i, f;
+ int ctr = 0;
+
+ cin >> i >> f;
+
+ if(i == f){
+  cout << "O JOGO DUROU 24 HORA(S)" << endl;
+  return 0;
+ }
+
+ while(i != f)
+ {
+  ctr++;
+  i++;
+  if(i == 25)
+   i = 1;
+ }
+
+ cout << "O JOGO DUROU " << ctr <<  " HORA(S)" << endl;
+
+ return 0;
+}
+
+
+
+2nd process: 
+
+/// leaned process and helpful process for TLE
+
+#include <stdio.h>
+
+int main()
+
+{
+
+    int strtTm, endTm, durationTm;
+
+    scanf("%d %d", &strtTm, &endTm);
+
+    durationTm = endTm - strtTm;
+
+    if (durationTm < 0)
+
+    {
+
+        durationTm = 24 + (endTm - strtTm);
+
+    }
+
+    if (strtTm == endTm)
+
+    {
+
+        printf("O JOGO DUROU 24 HORA(S)\n");
+
+    }
+
+    else printf("O JOGO DUROU %d HORA(S)\n", durationTm);
+
+
+
+    return 0;
+
+}
