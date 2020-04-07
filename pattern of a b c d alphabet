@@ -16,3 +16,31 @@ int main()
     }
     return 0;
 }
+
+
+
+// after i learnt this code i understand : 
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int i, j;
+    char input, alphabet='A';
+    printf("Enter the uppercase character you want to print in last row: ");
+    cin>>input;
+    for (i=1; i<=(input-'A'+1); i++)
+    {
+        
+        cout<<alphabet;
+        alphabet++;
+
+       cout<<endl;
+
+
+    }
+    return 0;
+
+}
