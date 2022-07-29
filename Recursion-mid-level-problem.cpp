@@ -1,5 +1,6 @@
 // if i give u 432 digit;
-// you should give me four,three,two as output; 
+// you should give me four,three,two as output;
+
 
 #include<bits/stdc++.h>
 using namespace std;
