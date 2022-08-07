@@ -1,0 +1,43 @@
+// technique to solve a map;
+// no need to understand the code;
+// just read this website first technique-> vecotor forumula:   https://www.techiedelight.com/sort-map-values-cpp/
+// return type of this function may change accoring to your need;
+// if u want to see a practice question of this u can check this :  https://leetcode.com/problems/top-k-frequent-words/
+
+
+
+vector<pair<string, int>> sortingMap (map<string,int>mapp){
+
+    // create an empty vector of pairs
+    vector<pair<string, int>> vec;
+
+    // copy key-value pairs from the map to the vector
+    copy(mapp.begin(),
+         mapp.end(),
+         back_inserter<vector<pair<string, int>>>(vec));
+
+    // sort the vector by increasing the order of its pair's second value
+    // if the second value is equal, order by the pair's first value
+    sort(vec.begin(), vec.end(),
+         [](const pair<string, int> &l, const pair<string, int> &r)
+    {
+        if (l.second != r.second)
+        {
+            return l.second > r.second;  //change this < for decending value
+        }
+
+        return l.first < r.first;
+    });
+    return vec;
+
+    /*
+    // print the vector
+    for (auto const &pair: vec)
+    {
+        cout << '{' << pair.first << "," << pair.second << '}' << endl;
+    }
+    */
+
+
+
+}
