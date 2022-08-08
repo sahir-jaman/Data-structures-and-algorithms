@@ -1,0 +1,18 @@
+// this will work for 2 input only
+
+def gcd(a,b):
+    if a==0:
+        return b
+    return gcd(b%a,a)
+def lcm(a,b):
+    gcd_Receiver = gcd(a,b)
+    product = a*b
+    return product//gcd_Receiver 
+
+
+t = int(input("Enter the testCase: "))
+while t!=0 :
+    n,m = map(int,input("Enter two values: ").split())
+    print("GCD output is: {}".format(gcd(n,m)))
+    print("LCM output is: {}".format(lcm(n,m)))
+    t-=1
