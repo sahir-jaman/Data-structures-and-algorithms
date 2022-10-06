@@ -3,7 +3,7 @@
 2.Then you subtract that sum by going to the right of the array and
 match if the sum value matches the leftSum.
 if not add the value at that particular index to the leftSum until
-the values of rightSum and leftSum matches..
+the values of rightSum and leftSum matches.
 */
 #include<bits/stdc++.h>
 using namespace std;
